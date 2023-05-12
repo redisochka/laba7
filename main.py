@@ -41,20 +41,7 @@ def xd4():
 
     from PIL import Image, ImageDraw, ImageFont
     import os
-
-    image_path = 'mark/bruh1.jpg'
-    image = Image.open(image_path)
-    draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype('arial.ttf', 36)
-    text = 'Водяной знак'
-    text_color = (255, 255, 255)
-    text_size = draw.textsize(text, font)
-
-    x = image.width - text_size[0] - 10
-    y = image.height - text_size[1] - 10
-
-    draw.text((x, y), text, font=font, fill=text_color)
-
+    
     images_folder = "C:/Users/HP/Desktop/xd/Учеба/Программирование/7_лаба/mark"
     watermark_text = '2xboots'
     watermark_color = (255, 0, 0)
